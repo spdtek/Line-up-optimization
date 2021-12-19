@@ -13,6 +13,9 @@ This demo, developed by Aitzol Iturrospe, uses the D-Wave Systems’ quantum ann
 
 Players and their playing position are selected to maximize the sum of players ratings in two different cases: a 4-3-3 attack formation and a 4-2-3-1 medium defensive formation. The problem is stated as a binary quadratic model (BQM) and it is solved in a D-Wave Leap’s Hybrid Solver.
 
+Coach line-up decision making is of utmost importance for the performance of sport teams. One important decision that must be taken by a soccer coach is to determine the starting line-up of players. The coach considers many factors of each player and the team strategy, so it is a complex decision-making process (Saaty, 1994). The team formation describes how the players are positioned on the soccer field. Some players can play in more than one position, even if their valuation con be different for each position. The decision of the coach can impact team performance reducing their chances to win the match (Purwanto et al., 2018), e.g. if the appropriate players are not selected for a given formation or they are placed in positions where the cannot give their best.
+
+
 Describe your example and specify what it is demonstrating. Consider the
 following questions:
 
