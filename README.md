@@ -1,19 +1,22 @@
 **Interested in contributing a code example?** 
 
-Please take a look at our [contribution guidelines](CONTRIBUTING.md) before
-getting started. Thanks!
-
-<!-- Before submitting your code, please delete the above code contribution
-instructions and this comment as they will not be relevant in your code 
-example README.md.-->
-
 # Line-up optimization
 
-This demo, developed by Aitzol Iturrospe, uses the D-Wave Systems’ quantum annealer for optimizing the initial line-up of a soccer team.
+The aim of this demo, developed by Aitzol Iturrospe, is to optimize the initial line-up of a soccer team. The goal is to select players maximizing the sum of their ratings. Two different cases are considered: 
+ - a 4-3-3 attack formation and 
+ - a 4-2-3-1 medium defensive formation. 
 
-Players and their playing position are selected to maximize the sum of players ratings in two different cases: a 4-3-3 attack formation and a 4-2-3-1 medium defensive formation. The problem is stated as a binary quadratic model (BQM) and it is solved in a D-Wave Leap’s Hybrid Solver.
+The problem is stated as a binary quadratic model (BQM) and it is solved in a D-Wave Leap’s Hybrid Solver.
 
-Coach line-up decision making is of utmost importance for the performance of sport teams. One important decision that must be taken by a soccer coach is to determine the starting line-up of players. The coach considers many factors of each player and the team strategy, so it is a complex decision-making process (Saaty, 1994). The team formation describes how the players are positioned on the soccer field. Some players can play in more than one position, even if their valuation con be different for each position. The decision of the coach can impact team performance reducing their chances to win the match (Purwanto et al., 2018), e.g. if the appropriate players are not selected for a given formation or they are placed in positions where the cannot give their best.
+The eleven football players are divided into several positions in accordance with the team formation. In addition to one goalkeeper (GK), the players are divided into three main positions, defenders (D), midfielders (M), and forward/strikers (FW). Each major position can be subdivided into several more specific positions, e.g. for the defender is divided into central defender (DC), left wing defender (DL) and right wing defender (DR). The midfielder's position can be divided into defensive midfielder (DM), central midfielder (CM) and attack midfielder (AM). The forward’s positions might be divided into right wing forward (FWR), left wing forward (FWL) and forward (FW). Figure 1 shows players’ ratings depending on the position as presented in the article (Mahrudinda et al., 2020). Each pair (player, position) will be considered a binary variable; being 1 if the player is lined up to play in that position and 0 otherwise.
+
+![D-Wave Logo](dwave_logo.png)
+
+
+
+
+
+
 
 
 Describe your example and specify what it is demonstrating. Consider the
