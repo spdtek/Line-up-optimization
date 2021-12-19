@@ -7,7 +7,11 @@ getting started. Thanks!
 instructions and this comment as they will not be relevant in your code 
 example README.md.-->
 
-# <demo_name>
+# Line-up optimization
+
+This demo, developed by Aitzol Iturrospe, uses the D-Wave Systems’ quantum annealer for optimizing initial line-up of a soccer team.
+
+Players and their playing position are selected to maximize the sum of players ratings for two different formations: a 4-3-3 attack formation and a 4-2-3-1 medium defensive formation. The problem is stated as a binary quadratic model (BQM) and it is solved in a D-Wave Leap’s Hybrid Solver.
 
 Describe your example and specify what it is demonstrating. Consider the
 following questions:
