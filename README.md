@@ -1,4 +1,9 @@
 **Interested in contributing a code example?** 
+<style>
+    table {
+        width: 100%;
+    }
+</style>
 
 # Line-up optimization
 
@@ -71,8 +76,23 @@ x<sub>28</sub> | Jota | CM | 9.39 | x<sub>28</sub> | Jota | CM | 9.39
 x<sub>34</sub> | Mane | FWL | 7.56 | x<sub>34</sub> | Mane | FWL | 7.56 
 x<sub>37</sub> | Salah | FWR | 7.42 | x<sub>37</sub> | Salah | FWR | 7.42 
 x<sub>39</sub> | Firminho | FW | 6.99 | x<sub>39</sub> | Firminho | FW | 6.99 
- |  |  | Max <sub>Z</sub> | 82.67 |  |  |  	Max H<sub>Z</sub> | 82.47
+ |  |  | Max H<sub>Z</sub> | 82.67 |  |  |  	Max H<sub>Z</sub> | 82.47
 
+
+Binary variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
+------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
+x<sub>1</sub> | Alisson | GK | 6.81 | x<sub>1</sub> | Alisson | GK | 6.81 
+x<sub>6</sub> | Philips | DC | 7.24 | x<sub>6</sub> | Gomez | DC | 6.91 
+x<sub>7</sub> | Fabinho | DC | 7.11 | x<sub>7</sub> | Philips | DC | 7.24 
+x<sub>8</sub> | Robertson | DL | 6.85 | x<sub>8</sub> | Robertson | DL | 6.85 
+x<sub>11</sub> | Milner | DR | 8.15 | x<sub>11</sub> | Milner | DR | 8.15 
+x<sub>14</sub> | Williams | DM | 7.66 | x<sub>14</sub> | Williams | DM | 7.66 
+x<sub>16</sub> | Henderson | DM | 6.80 | x<sub>16</sub> | Henderson | DM | 6.80 
+x<sub>29</sub> | Wijnaldum | AM | 7.16 | x<sub>29</sub> | Wijnaldum | AM | 7.16
+x<sub>31</sub> | Firminho | AM | 6.80 | x<sub>31</sub> | Firminho | AM | 6.80
+x<sub>32</sub> | Mane | AM | 7.24 | x<sub>32</sub> | Mane | AM | 7.24 
+x<sub>42</sub> | Jota | FW | 8.22 | x<sub>42</sub> | Jota | FW | 8.22
+ |  |  | Max H<sub>Z</sub> | 80.04 |  |  |  	Max H<sub>Z</sub> | 80.04
 
 
 
