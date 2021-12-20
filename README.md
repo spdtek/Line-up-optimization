@@ -56,6 +56,25 @@ Constraint  | Explanation  | Nomenclature
 (x<sub>29</sub>+x<sub>30</sub>+x<sub>31</sub>+x<sub>32</sub>+x<sub>33</sub>-3)<sup>2</sup>  | 3 attacking midfielder  | C<sub>11</sub>
 
 
+QPU results for 4-3-3 formation 	Results for 4-3-3 formation in (Mahrudinda et al., 2020)
+
+Binary variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
+------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
+x<sub>1</sub> | Alisson | GK | 6.81 | x<sub>1</sub> | Alisson | GK | 6.81 
+x<sub>6</sub> | Philips | DC | 7.24 | x<sub>4</sub> | Gomez | DC | 6.91 
+x<sub>7</sub> | Fabinho | DC | 7.11 | x<sub>6</sub> | Philips | DC | 7.24 
+x<sub>8</sub> | Robertson | DL | 6.85 | x<sub>8</sub> | Robertson | DL | 6.85 
+x<sub>11</sub> | Milner | DR | 8.15 | x<sub>11</sub> | Milner | DR | 8.15 
+x<sub>18</sub> | Williams | CM | 7.77 | x<sub>18</sub> | Williams | CM | 7.77 
+x<sub>21</sub> | Thiago | CM | 7.38 | x<sub>21</sub> | Thiago | CM | 7.38 
+x<sub>28</sub> | Jota | CM | 9.39 | x<sub>28</sub> | Jota | CM | 9.39 
+x<sub>34</sub> | Mane | FWL | 7.56 | x<sub>34</sub> | Mane | FWL | 7.56 
+x<sub>37</sub> | Salah | FWR | 7.42 | x<sub>37</sub> | Salah | FWR | 7.42 
+x<sub>39</sub> | Firminho | FW | 6.99 | x<sub>39</sub> | Firminho | FW | 6.99 
+ |  |  | Max <sub>Z</sub> | 82.67 |  |  |  	Max H<sub>Z</sub> | 82.47
+
+
+
 
 
 
