@@ -1,5 +1,3 @@
-**Interested in contributing a code example?** 
-
 # Line-up optimization
 
 The aim of this demo, developed by Aitzol Iturrospe, is to optimize the initial line-up of Liverpool FC. The goal is to select players
@@ -33,49 +31,162 @@ the player is lined up to play in that position and 0 otherwise.
 Fig.1 - Players’ ratings (Mahrudinda et al., 2020).
 </p>
 
+Maximize H<sub>Z</sub>=6.81x<sub>0</sub>+5.86x<sub>1</sub>+6.62x<sub>2</sub>+⋯+6.03x<sub>40</sub>+8.22x<sub>41</sub>+5.84x<sub>42</sub>
 
 Constraint  | Explanation  | Nomenclature
 ------------- | ------------- | -------------
-(x<sub>1</sub>+x<sub>2</sub>+x<sub>3</sub>+⋯+x<sub>41</sub>+x<sub>42</sub>+x<sub>43</sub>-11)<sup>2</sup>  | 11 players  | C<sub>1</sub>
-(x<sub>1</sub>+x<sub>2</sub>-1)<sup>2</sup>  | 1 goalkeeper  | C<sub>2</sub>
-(x<sub>3</sub>+x<sub>4</sub>+x<sub>5</sub>+x<sub>6</sub>+x<sub>7</sub>-2)<sup>2</sup>  | 2 central defenders  | C<sub>3</sub>
-(x<sub>8</sub>-1)<sup>2</sup>  | 1 left-hand side defender  | C<sub>4</sub>
-(x<sub>9</sub>+x<sub>10</sub>+x<sub>11</sub>-1)<sup>2</sup>  | 1 right-hand side defender  | C<sub>5</sub>
-(x<sub>39</sub>+x<sub>40</sub>+x<sub>41</sub>+x<sub>42</sub>+x<sub>43</sub>-1)<sup>2</sup>  | 1 forward/striker  | C<sub>6</sub>
+(x<sub>0</sub>+x<sub>1</sub>+x<sub>2</sub>+⋯+x<sub>40</sub>+x<sub>41</sub>+x<sub>42</sub>-11)<sup>2</sup>  | 11 players  | C<sub>1</sub>
+(x<sub>0</sub>+x<sub>1</sub>-1)<sup>2</sup>  | 1 goalkeeper  | C<sub>2</sub>
+(x<sub>2</sub>+x<sub>3</sub>+x<sub>4</sub>+x<sub>5</sub>+x<sub>6</sub>-2)<sup>2</sup>  | 2 central defenders  | C<sub>3</sub>
+(x<sub>7</sub>-1)<sup>1</sup>  | 1 left-hand side defender  | C<sub>4</sub>
+(x<sub>8</sub>+x<sub>9</sub>+x<sub>10</sub>-1)<sup>2</sup>  | 1 right-hand side defender  | C<sub>5</sub>
+(x<sub>38</sub>+x<sub>39</sub>+x<sub>40</sub>+x<sub>41</sub>+x<sub>42</sub>-1)<sup>2</sup>  | 1 forward/striker  | C<sub>6</sub>
 
 Constraint  | Explanation  | Nomenclature
 ------------- | ------------- | -------------
-(x<sub>17</sub>+x<sub>18</sub>+x<sub>19</sub>+⋯+x<sub>26</sub>+x<sub>27</sub>+x<sub>28</sub>-3)<sup>2</sup>  | 3 central midfielders  | C<sub>7</sub>
-(x<sub>34</sub>+x<sub>35</sub>+x<sub>36</sub>-1)<sup>2</sup>  | 1 left forward  | C<sub>8</sub>
-(x<sub>37</sub>+x<sub>38</sub>-1)<sup>2</sup>  | 1 right forward  | C<sub>9</sub>
+(x<sub>16</sub>+x<sub>17</sub>+x<sub>18</sub>+⋯+x<sub>25</sub>+x<sub>26</sub>+x<sub>27</sub>-3)<sup>2</sup>  | 3 central midfielders  | C<sub>7</sub>
+(x<sub>33</sub>+x<sub>34</sub>+x<sub>35</sub>-1)<sup>2</sup>  | 1 left forward  | C<sub>8</sub>
+(x<sub>36</sub>+x<sub>37</sub>-1)<sup>2</sup>  | 1 right forward  | C<sub>9</sub>
 
 
 Constraint  | Explanation  | Nomenclature
 ------------- | ------------- | -------------
-(x<sub>12</sub>+x<sub>13</sub>+x<sub>14</sub>+x<sub>15</sub>+x<sub>16</sub>-2)<sup>2</sup>  | 2 defensive midfielders  | C<sub>10</sub>
-(x<sub>29</sub>+x<sub>30</sub>+x<sub>31</sub>+x<sub>32</sub>+x<sub>33</sub>-3)<sup>2</sup>  | 3 attacking midfielder  | C<sub>11</sub>
+(x<sub>11</sub>+x<sub>12</sub>+x<sub>13</sub>+x<sub>14</sub>+x<sub>15</sub>-2)<sup>2</sup>  | 2 defensive midfielders  | C<sub>10</sub>
+(x<sub>28</sub>+x<sub>29</sub>+x<sub>30</sub>+x<sub>31</sub>+x<sub>32</sub>-3)<sup>2</sup>  | 3 attacking midfielder  | C<sub>11</sub>
 
 
 For inequality constraints, slack variables are introduced in order to reduce them to equalities (DWAVE, 2021) as follows:
 
 Constraint  | Nomenclature
 ------------- | -------------
-(x<sub>8</sub>+x<sub>12</sub>+x<sub>17</sub>+a<sub>1</sub>-1)<sup>2</sup>  | I<sub>1</sub>
-(x<sub>9</sub>+x<sub>13</sub>+a<sub>2</sub>-1)<sup>2</sup>  | I<sub>2</sub>
-(x<sub>10</sub>+x<sub>14</sub>+x<sub>18</sub>+a<sub>3</sub>-1)<sup>2</sup>  | I<sub>3</sub>
-(x<sub>15</sub>+x<sub>20</sub>+x<sub>29</sub>+a<sub>4</sub>-1)<sup>2</sup>  | I<sub>4</sub>
-(x<sub>11</sub>+x<sub>22</sub>+a<sub>5</sub>-1)<sup>2</sup>  | I<sub>5</sub>
-(x<sub>16</sub>+x<sub>24</sub>+a<sub>6</sub>-1)<sup>2</sup>  | I<sub>6</sub>
-(x<sub>26</sub>+x<sub>30</sub>+a<sub>7</sub>-1)<sup>2</sup>  | I<sub>7</sub>
-(x<sub>32</sub>+x<sub>34</sub>+a<sub>8</sub>-1)<sup>2</sup>  | I<sub>8</sub>
-(x<sub>37</sub>+x<sub>40</sub>+a<sub>9</sub>-1)<sup>2</sup>  | I<sub>9</sub>
-(x<sub>28</sub>+x<sub>33</sub>+x<sub>35</sub>+x<sub>38</sub>+x<sub>42</sub>+a<sub>10</sub>-1)<sup>2</sup>  | I<sub>10</sub>
+(x<sub>7</sub>+x<sub>11</sub>+x<sub>16</sub>+a<sub>0</sub>-1)<sup>2</sup>  | I<sub>1</sub>
+(x<sub>8</sub>+x<sub>12</sub>+a<sub>1</sub>-1)<sup>2</sup>  | I<sub>2</sub>
+(x<sub>9</sub>+x<sub>13</sub>+x<sub>17</sub>+a<sub>2</sub>-1)<sup>2</sup>  | I<sub>3</sub>
+(x<sub>14</sub>+x<sub>19</sub>+x<sub>28</sub>+a<sub>3</sub>-1)<sup>2</sup>  | I<sub>4</sub>
+(x<sub>10</sub>+x<sub>21</sub>+a<sub>4</sub>-1)<sup>2</sup>  | I<sub>5</sub>
+(x<sub>15</sub>+x<sub>23</sub>+a<sub>5</sub>-1)<sup>2</sup>  | I<sub>6</sub>
+(x<sub>25</sub>+x<sub>29</sub>+a<sub>6</sub>-1)<sup>2</sup>  | I<sub>7</sub>
+(x<sub>31</sub>+x<sub>33</sub>+a<sub>7</sub>-1)<sup>2</sup>  | I<sub>8</sub>
+(x<sub>36</sub>+x<sub>39</sub>+a<sub>8</sub>-1)<sup>2</sup>  | I<sub>9</sub>
+(x<sub>27</sub>+x<sub>32</sub>+x<sub>34</sub>+x<sub>37</sub>+x<sub>41</sub>+a<sub>9</sub>-1)<sup>2</sup>  | I<sub>10</sub>
+
+H<sub>433</sub> = -H<sub>Z</sub> + λ(C<sub>1</sub>+C<sub>2</sub>+C<sub>3</sub>+C<sub>4</sub>+C<sub>5</sub>+C<sub>6</sub>+C<sub>7</sub>+C<sub>8</sub>+C<sub>9</sub>+I<sub>1</sub>+I<sub>2</sub>+I<sub>3</sub>+I<sub>4</sub>+I<sub>5</sub>+I<sub>6</sub>+I<sub>7</sub>+I<sub>8</sub>+I<sub>9</sub>+I<sub>10</sub>)
+
+H<sub>4321</sub> = -H<sub>Z</sub> + λ(C<sub>1</sub>+C<sub>2</sub>+C<sub>3</sub>+C<sub>4</sub>+C<sub>5</sub>+C<sub>6</sub>+C<sub>10</sub>+C<sub>11</sub>+I<sub>1</sub>+I<sub>2</sub>+I<sub>3</sub>+I<sub>4</sub>+I<sub>5</sub>+I<sub>6</sub>+I<sub>7</sub>+I<sub>8</sub>+I<sub>9</sub>+I<sub>10</sub>)
+
+
+
+
+{'1 goal keeper': (True, 0.0),
+'11 players team': (True, 0.0),
+'x10+x21<=1': (True, 0.0),
+'x14+x19+x28<=1': (True, 0.0),
+'x15+x23<=1': (True, 0.0),
+'x16+x17+x18+x19+x20+x21+x22+x23+x24+x25+x26+x27+=3': (True, 0.0),
+'x2+x3+x4+x5+x6=2': (True, 0.0),
+'x25+x29<=1': (True, 0.0),
+'x27+x32+x34+x37+x41<=1': (True, 0.0),
+'x31+x33<=1': (True, 0.0),
+'x33+x34+x35=1': (True, 0.0),
+'x36+x37=1': (True, 0.0),
+'x36+x39<=1': (True, 0.0),
+'x38+x39+x40+x41+x42=1': (True, 0.0),
+'x7+x11+x16<=1': (True, 0.0),
+'x7=1': (True, 0.0),
+'x8+x12<=1': (True, 0.0),
+'x8+x9+x10=1': (True, 0.0),
+'x9+x13+x17<=1': (True, 0.0)}
+
+   Variable     Player Position  Rating  Selected
+0      x[0]    Alisson       GK    6.81         1
+1      x[5]   Phillips       DC    7.24         1
+2      x[6]    Fabinho       DC    7.11         1
+3      x[7]  Robertson       DL    6.85         1
+4     x[10]     Milner       DR    8.15         1
+5     x[17]   Williams       CM    7.77         1
+6     x[20]     Thiago       CM    7.38         1
+7     x[27]       Jota       CM    9.39         1
+8     x[33]       Mane      FWL    7.56         1
+9     x[36]      Salah      FWR    7.42         1
+10    x[38]    Firmino       FW    6.99         1
+82.67
+
+
+{'1 goal keeper': (True, 0.0),
+'11 players team': (True, 0.0),
+'x10+x21<=1': (True, 0.0),
+'x11+x12+x13+x14+x15=2': (True, 0.0),
+'x14+x19+x28<=1': (True, 0.0),
+'x15+x23<=1': (True, 0.0),
+'x2+x3+x4+x5+x6=2': (True, 0.0),
+'x25+x29<=1': (True, 0.0),
+'x27+x32+x34+x37+x41<=1': (True, 0.0),
+'x28+x29+x30+x31+x32=3': (True, 0.0),
+'x31+x33<=1': (True, 0.0),
+'x36+x39<=1': (True, 0.0),
+'x38+x39+x40+x41+x42=1': (True, 0.0),
+'x7+x11+x16<=1': (True, 0.0),
+'x7=1': (True, 0.0),
+'x8+x12<=1': (True, 0.0),
+'x8+x9+x10=1': (True, 0.0),
+'x9+x13+x17<=1': (True, 0.0)}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+   Variable     Player Position  Rating  Selected
+   
+0      x[0]    Alisson       GK    6.81         1
+
+1      x[5]   Phillips       DC    7.24         1
+
+2      x[6]    Fabinho       DC    7.11         1
+
+3      x[7]  Robertson       DL    6.85         1
+
+4     x[10]     Milner       DR    8.15         1
+
+5     x[17]   Williams       CM    7.77         1
+
+6     x[20]     Thiago       CM    7.38         1
+
+7     x[27]       Jota       CM    9.39         1
+
+8     x[33]       Mane      FWL    7.56         1
+
+9     x[36]      Salah      FWR    7.42         1
+
+10    x[38]    Firmino       FW    6.99         1
+
+82.67
+
+   Variable     Player Position  Rating  Selected
+0      x[0]    Alisson       GK    6.81         1
+1      x[5]   Phillips       DC    7.24         1
+2      x[6]    Fabinho       DC    7.11         1
+3      x[7]  Robertson       DL    6.85         1
+4     x[10]     Milner       DR    8.15         1
+5     x[13]   Williams       DM    7.66         1
+6     x[15]  Henderson       DM    6.80         1
+7     x[28]  Wijnaldum       AM    7.16         1
+8     x[30]    Firmino       AM    6.80         1
+9     x[31]       Mane       AM    7.24         1
+10    x[41]       Jota       FW    8.22         1
+80.03999999999999
+
+  
 
 QPU results for 4-3-3 formation 	Results for 4-3-3 formation in (Mahrudinda et al., 2020)
 
