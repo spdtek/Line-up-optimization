@@ -1,5 +1,5 @@
 **Interested in contributing a code example?** 
-<table style="width: 100%;"><tbody><tr>
+<table style="max-width: 100%;"><tbody><tr>
 # Line-up optimization
 
 The aim of this demo, developed by Aitzol Iturrospe, is to optimize the initial line-up of Liverpool FC. The goal is to select players
