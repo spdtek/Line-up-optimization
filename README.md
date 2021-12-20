@@ -1,9 +1,4 @@
 **Interested in contributing a code example?** 
-<style>
-    table {
-        width: 100%;
-    }
-</style>
 
 # Line-up optimization
 
