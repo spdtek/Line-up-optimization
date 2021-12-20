@@ -1,5 +1,5 @@
 **Interested in contributing a code example?** 
-<table style="max-width: 100%;"><tbody><tr>
+
 # Line-up optimization
 
 The aim of this demo, developed by Aitzol Iturrospe, is to optimize the initial line-up of Liverpool FC. The goal is to select players
@@ -58,7 +58,7 @@ Constraint  | Explanation  | Nomenclature
 
 QPU results for 4-3-3 formation 	Results for 4-3-3 formation in (Mahrudinda et al., 2020)
 
-Binary variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
+Variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
 ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
 x<sub>1</sub> | Alisson | GK | 6.81 | x<sub>1</sub> | Alisson | GK | 6.81 
 x<sub>6</sub> | Philips | DC | 7.24 | x<sub>4</sub> | Gomez | DC | 6.91 
@@ -74,7 +74,7 @@ x<sub>39</sub> | Firminho | FW | 6.99 | x<sub>39</sub> | Firminho | FW | 6.99
  |  |  | Max H<sub>Z</sub> | 82.67 |  |  |  	Max H<sub>Z</sub> | 82.47
 
 
-Binary variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
+Variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
 ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
 x<sub>1</sub> | Alisson | GK | 6.81 | x<sub>1</sub> | Alisson | GK | 6.81 
 x<sub>6</sub> | Philips | DC | 7.24 | x<sub>6</sub> | Gomez | DC | 6.91 
