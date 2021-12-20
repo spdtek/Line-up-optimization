@@ -58,7 +58,7 @@ Constraint  | Explanation  | Nomenclature
 
 QPU results for 4-3-3 formation 	Results for 4-3-3 formation in (Mahrudinda et al., 2020)
 
-<p style="width: 50%;">
+<table style="width: 50%;">
 Binary variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
 ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
 x<sub>1</sub> | Alisson | GK | 6.81 | x<sub>1</sub> | Alisson | GK | 6.81 
@@ -73,7 +73,7 @@ x<sub>34</sub> | Mane | FWL | 7.56 | x<sub>34</sub> | Mane | FWL | 7.56
 x<sub>37</sub> | Salah | FWR | 7.42 | x<sub>37</sub> | Salah | FWR | 7.42 
 x<sub>39</sub> | Firminho | FW | 6.99 | x<sub>39</sub> | Firminho | FW | 6.99 
  |  |  | Max H<sub>Z</sub> | 82.67 |  |  |  	Max H<sub>Z</sub> | 82.47
-</p>
+</table>
 
 Binary variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
 ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
