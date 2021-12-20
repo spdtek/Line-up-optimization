@@ -30,8 +30,7 @@ the player is lined up to play in that position and 0 otherwise.
 <p align="center" dir="auto">
 </p><p dir="auto"><img src="ratings.png" alt="Figure 1" title="Players’ ratings" style="max-width: 100%;"></p>
 <p dir="auto">
-  
-Fig.1 - Players’ ratings depending on the position they play (Mahrudinda et al., 2020).
+Fig.1 - Players’ ratings (Mahrudinda et al., 2020).
 </p>
 
 
