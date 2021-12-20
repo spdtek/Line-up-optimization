@@ -34,6 +34,34 @@ Fig.1 - Players’ ratings (Mahrudinda et al., 2020).
 </p>
 
 
+Constraint  | Explanation  | Nomenclature
+------------- | ------------- | -------------
+(x<sub>1</sub>+x<sub>2</sub>+x<sub>3</sub>+⋯+x<sub>41</sub>+x<sub>42</sub>+x<sub>43</sub>-11)<sup>2</sup>  | 11 players  | C<sub>1</sub>
+(x<sub>1</sub>+x<sub>2</sub>-1)<sup>2</sup>  | 1 goalkeeper  | C<sub>2</sub>
+(x<sub>3</sub>+x<sub>4</sub>+x<sub>5</sub>+x<sub>6</sub>+x<sub>7</sub>-2)<sup>2</sup>  | 2 central defenders  | C<sub>3</sub>
+(x<sub>8</sub>-1)<sup>2</sup>  | 1 left-hand side defender  | C<sub>4</sub>
+(x<sub>9</sub>+x<sub>10</sub>+x<sub>11</sub>-1)<sup>2</sup>  | 1 right-hand side defender  | C<sub>5</sub>
+(x<sub>39</sub>+x<sub>40</sub>+x<sub>41</sub>+x<sub>42</sub>+x<sub>43</sub>-1)<sup>2</sup>  | 1 forward/striker  | C<sub>6</sub>
+
+Constraint  | Explanation  | Nomenclature
+------------- | ------------- | -------------
+(x<sub>17</sub>+x<sub>18</sub>+x<sub>19</sub>+⋯+x<sub>26</sub>+x<sub>27</sub>+x<sub>28</sub>-3)<sup>2</sup>  | 3 central midfielders  | C<sub>7</sub>
+(x<sub>34</sub>+x<sub>35</sub>+x<sub>36</sub>-1)<sup>2</sup>  | 1 left forward  | C<sub>8</sub>
+(x<sub>37</sub>+x<sub>38</sub>-1)<sup>2</sup>  | 1 right forward  | C<sub>9</sub>
+
+
+Constraint  | Explanation  | Nomenclature
+------------- | ------------- | -------------
+(x<sub>12</sub>+x<sub>13</sub>+x<sub>14</sub>+x<sub>15</sub>+x<sub>16</sub>-2)<sup>2</sup>  | 2 defensive midfielders  | C<sub>10</sub>
+(x<sub>29</sub>+x<sub>30</sub>+x<sub>31</sub>+x<sub>32</sub>+x<sub>33</sub>-3)<sup>2</sup>  | 3 attacking midfielder  | C<sub>11</sub>
+
+
+
+
+
+
+
+
 
 
 
