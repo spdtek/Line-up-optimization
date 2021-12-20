@@ -56,9 +56,29 @@ Constraint  | Explanation  | Nomenclature
 (x<sub>29</sub>+x<sub>30</sub>+x<sub>31</sub>+x<sub>32</sub>+x<sub>33</sub>-3)<sup>2</sup>  | 3 attacking midfielder  | C<sub>11</sub>
 
 
+For inequality constraints, slack variables are introduced in order to reduce them to equalities (DWAVE, 2021) as follows:
+
+Constraint  | Nomenclature
+------------- | -------------
+(x<sub>8</sub>+x<sub>12</sub>+x<sub>17</sub>+a<sub>1</sub>-1)<sup>2</sup>  | I<sub>1</sub>
+(x<sub>9</sub>+x<sub>13</sub>+a<sub>2</sub>-1)<sup>2</sup>  | I<sub>2</sub>
+(x<sub>10</sub>+x<sub>14</sub>+x<sub>18</sub>+a<sub>3</sub>-1)<sup>2</sup>  | I<sub>3</sub>
+(x<sub>15</sub>+x<sub>20</sub>+x<sub>29</sub>+a<sub>4</sub>-1)<sup>2</sup>  | I<sub>4</sub>
+(x<sub>11</sub>+x<sub>22</sub>+a<sub>5</sub>-1)<sup>2</sup>  | I<sub>5</sub>
+(x<sub>16</sub>+x<sub>24</sub>+a<sub>6</sub>-1)<sup>2</sup>  | I<sub>6</sub>
+(x<sub>26</sub>+x<sub>30</sub>+a<sub>7</sub>-1)<sup>2</sup>  | I<sub>7</sub>
+(x<sub>32</sub>+x<sub>34</sub>+a<sub>8</sub>-1)<sup>2</sup>  | I<sub>8</sub>
+(x<sub>37</sub>+x<sub>40</sub>+a<sub>9</sub>-1)<sup>2</sup>  | I<sub>9</sub>
+(x<sub>28</sub>+x<sub>33</sub>+x<sub>35</sub>+x<sub>38</sub>+x<sub>42</sub>+a<sub>10</sub>-1)<sup>2</sup>  | I<sub>10</sub>
+
+
+
+
+
+
+
 QPU results for 4-3-3 formation 	Results for 4-3-3 formation in (Mahrudinda et al., 2020)
 
-<table style="width: 50%;">
 Binary variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
 ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
 x<sub>1</sub> | Alisson | GK | 6.81 | x<sub>1</sub> | Alisson | GK | 6.81 
@@ -73,7 +93,7 @@ x<sub>34</sub> | Mane | FWL | 7.56 | x<sub>34</sub> | Mane | FWL | 7.56
 x<sub>37</sub> | Salah | FWR | 7.42 | x<sub>37</sub> | Salah | FWR | 7.42 
 x<sub>39</sub> | Firminho | FW | 6.99 | x<sub>39</sub> | Firminho | FW | 6.99 
  |  |  | Max H<sub>Z</sub> | 82.67 |  |  |  	Max H<sub>Z</sub> | 82.47
-</table>
+
 
 Binary variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
 ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
