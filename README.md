@@ -26,7 +26,13 @@ Figure 1 shows Liverpool FC football players’ ratings depending on the positio
 the English Premier League during the 2020/2021 season. Each pair (player, position) will be considered as a binary variable; being 1 if
 the player is lined up to play in that position and 0 otherwise.
 
-<img src="ratings.png" width=50% height=50%>
+
+<p align="center" dir="auto">
+</p><p dir="auto"><a target="_blank" rel="noopener noreferrer" <img src="ratings.png" alt="Figure 1" title="Players’ ratings" style="max-width: 100%;"></a></p>
+<p dir="auto">
+  
+Fig.1 - Players’ ratings depending on the position they play (Mahrudinda et al., 2020).
+</p>
 
 
 
