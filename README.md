@@ -64,7 +64,7 @@ Constraint  | Explanation  | Nomenclature
 
 For both formations, we impose the following inequalities as constraints to avoid solutions with players in multiple positions. For inequality constraints, slack variables are introduced in order to reduce them to equalities (DWAVE, 2021) (as shown in table 4).
 
-Table 4. Constraints to avoid solutions where the same player plays in different positions
+Table 4. Constraints to avoid solutions with the same player in different positions
 
 Constraint  | Nomenclature
 ------------- | -------------
@@ -79,11 +79,14 @@ Constraint  | Nomenclature
 (x<sub>36</sub>+x<sub>39</sub>+a<sub>8</sub>-1)<sup>2</sup>  | I<sub>9</sub>
 (x<sub>27</sub>+x<sub>32</sub>+x<sub>34</sub>+x<sub>37</sub>+x<sub>41</sub>+a<sub>9</sub>-1)<sup>2</sup>  | I<sub>10</sub>
 
+The Lagrange multiplier (λ<sub>i</sub>) acts as a weight given to the constraint. It should be set high enough to ensure the constraint is satisfied but setting it too high obscures the real function we are trying to minimize. All the Lagrange multipliers were set equal to each other and further equal to eleven times the maximum rating.
+
 As the objective function is a maximization function, it is converted to a minimization by multiplying the H<sub>Z</sub> expression by -1.
 
 H<sub>433</sub> = -H<sub>Z</sub> + λ(C<sub>1</sub>+C<sub>2</sub>+C<sub>3</sub>+C<sub>4</sub>+C<sub>5</sub>+C<sub>6</sub>+C<sub>7</sub>+C<sub>8</sub>+C<sub>9</sub>+I<sub>1</sub>+I<sub>2</sub>+I<sub>3</sub>+I<sub>4</sub>+I<sub>5</sub>+I<sub>6</sub>+I<sub>7</sub>+I<sub>8</sub>+I<sub>9</sub>+I<sub>10</sub>)
 
 H<sub>4321</sub> = -H<sub>Z</sub> + λ(C<sub>1</sub>+C<sub>2</sub>+C<sub>3</sub>+C<sub>4</sub>+C<sub>5</sub>+C<sub>6</sub>+C<sub>10</sub>+C<sub>11</sub>+I<sub>1</sub>+I<sub>2</sub>+I<sub>3</sub>+I<sub>4</sub>+I<sub>5</sub>+I<sub>6</sub>+I<sub>7</sub>+I<sub>8</sub>+I<sub>9</sub>+I<sub>10</sub>)
+
 
 
 {'1 goal keeper': (True, 0.0),
@@ -258,13 +261,12 @@ displaying it here.
 
 ## Usage
 
-A simple command that runs your program. For example,
+To run the demo, type:
 
-```bash
-python <demo_name>.py
-```
+python lineup_optim.py
 
-If your example requires user input, make sure to specify any input limitations.
+After running, output will be printed to the command line that showing the optimized line-up for the choosen formation and total rating. In addition, a list of constraints will be visualized showing wether if they are fulfilled (true) o not (false).
+
 
 ## Code Overview
 
@@ -290,8 +292,9 @@ the code.
 
 ## References
 
-A. Person, "Title of Amazing Information", [short link
-name](https://example.com/)
+(DWAVE, 2021) D-wave problem-solving handbook. https://docs.dwavesys.com/docs/latest/doc_handbook.html. Accessed 18 Dec 2021.
+(Mahrudinda et al., 2020) Mahrudinda, Sudrajat Supian, S. Subiyanto and Chaerani, D.  Optimization of The Best Line-up in Football using Binary Integer Programming Model. International Journal of Global Operations Research, Vol. 1, No. 3, pp. 114-122, 2020.
+
 
 ## License
 
