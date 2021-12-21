@@ -34,7 +34,7 @@ The objective function to be maximized is the total sum of ratings of selected p
 
 Maximize H<sub>Z</sub>=6.81x<sub>0</sub>+5.86x<sub>1</sub>+6.62x<sub>2</sub>+⋯+6.03x<sub>40</sub>+8.22x<sub>41</sub>+5.84x<sub>42</sub>
 
-Equality constraints are standardly formulated in BQMs as minimizing <img src="image027.png"> functions. Therefore, the constraints in table 1 and 2 are reformulated following then quadratic formulation and they are shown in tables 4, 5 and 6.
+Equality constraints <img src="image027.png" style="vertical-align: -100px; margin: 0;" width=8% height=8%> are standardly formulated in BQMs as minimizing <img src="image028.png" style="vertical-align: -100px; margin: 0;" width=10% height=10%> functions. Therefore, the constraints are formulated following the quadratic formulation and they are shown in tables 1, 2 and 3.
 
 Table.1 - General constraints
 
