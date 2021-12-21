@@ -30,8 +30,13 @@ the player is lined up to play in that position and 0 otherwise.
 <p dir="auto">
 Fig.1 - Players’ ratings (Mahrudinda et al., 2020).
 </p>
+The objective function to be maximized is the total sum of ratings of selected players, subject to the constraints in table 1, and the specific contrantis for both formations considered in table 2 and table 3 respectively.
 
 Maximize H<sub>Z</sub>=6.81x<sub>0</sub>+5.86x<sub>1</sub>+6.62x<sub>2</sub>+⋯+6.03x<sub>40</sub>+8.22x<sub>41</sub>+5.84x<sub>42</sub>
+
+Equality constraints are standardly formulated in BQMs as minimizing (∑_(i=0)^N▒〖a_i x_i-b〗)^2 functions. Therefore, the constraints in table 1 and 2 are reformulated following then quadratic formulation and they are shown in tables 4, 5 and 6.
+
+Table.1 - General constraints
 
 Constraint  | Explanation  | Nomenclature
 ------------- | ------------- | -------------
@@ -42,20 +47,24 @@ Constraint  | Explanation  | Nomenclature
 (x<sub>8</sub>+x<sub>9</sub>+x<sub>10</sub>-1)<sup>2</sup>  | 1 right-hand side defender  | C<sub>5</sub>
 (x<sub>38</sub>+x<sub>39</sub>+x<sub>40</sub>+x<sub>41</sub>+x<sub>42</sub>-1)<sup>2</sup>  | 1 forward/striker  | C<sub>6</sub>
 
+Table.2 - Constraints for formation 4-3-3
+
 Constraint  | Explanation  | Nomenclature
 ------------- | ------------- | -------------
 (x<sub>16</sub>+x<sub>17</sub>+x<sub>18</sub>+⋯+x<sub>25</sub>+x<sub>26</sub>+x<sub>27</sub>-3)<sup>2</sup>  | 3 central midfielders  | C<sub>7</sub>
 (x<sub>33</sub>+x<sub>34</sub>+x<sub>35</sub>-1)<sup>2</sup>  | 1 left forward  | C<sub>8</sub>
 (x<sub>36</sub>+x<sub>37</sub>-1)<sup>2</sup>  | 1 right forward  | C<sub>9</sub>
 
+Table.3 - Constraints for formation 4-3-2-1
 
 Constraint  | Explanation  | Nomenclature
 ------------- | ------------- | -------------
 (x<sub>11</sub>+x<sub>12</sub>+x<sub>13</sub>+x<sub>14</sub>+x<sub>15</sub>-2)<sup>2</sup>  | 2 defensive midfielders  | C<sub>10</sub>
 (x<sub>28</sub>+x<sub>29</sub>+x<sub>30</sub>+x<sub>31</sub>+x<sub>32</sub>-3)<sup>2</sup>  | 3 attacking midfielder  | C<sub>11</sub>
 
+For both formations, we impose the following inequalities as constraints to avoid solutions with players in multiple positions. For inequality constraints, slack variables are introduced in order to reduce them to equalities (DWAVE, 2021) (as shown in table 4).
 
-For inequality constraints, slack variables are introduced in order to reduce them to equalities (DWAVE, 2021) as follows:
+Table 4. Constraints to avoid solutions where the same player plays in different positions
 
 Constraint  | Nomenclature
 ------------- | -------------
@@ -70,11 +79,11 @@ Constraint  | Nomenclature
 (x<sub>36</sub>+x<sub>39</sub>+a<sub>8</sub>-1)<sup>2</sup>  | I<sub>9</sub>
 (x<sub>27</sub>+x<sub>32</sub>+x<sub>34</sub>+x<sub>37</sub>+x<sub>41</sub>+a<sub>9</sub>-1)<sup>2</sup>  | I<sub>10</sub>
 
+As the objective function is a maximization function, it is converted to a minimization by multiplying the H<sub>Z</sub> expression by -1.
+
 H<sub>433</sub> = -H<sub>Z</sub> + λ(C<sub>1</sub>+C<sub>2</sub>+C<sub>3</sub>+C<sub>4</sub>+C<sub>5</sub>+C<sub>6</sub>+C<sub>7</sub>+C<sub>8</sub>+C<sub>9</sub>+I<sub>1</sub>+I<sub>2</sub>+I<sub>3</sub>+I<sub>4</sub>+I<sub>5</sub>+I<sub>6</sub>+I<sub>7</sub>+I<sub>8</sub>+I<sub>9</sub>+I<sub>10</sub>)
 
 H<sub>4321</sub> = -H<sub>Z</sub> + λ(C<sub>1</sub>+C<sub>2</sub>+C<sub>3</sub>+C<sub>4</sub>+C<sub>5</sub>+C<sub>6</sub>+C<sub>10</sub>+C<sub>11</sub>+I<sub>1</sub>+I<sub>2</sub>+I<sub>3</sub>+I<sub>4</sub>+I<sub>5</sub>+I<sub>6</sub>+I<sub>7</sub>+I<sub>8</sub>+I<sub>9</sub>+I<sub>10</sub>)
-
-
 
 
 {'1 goal keeper': (True, 0.0),
