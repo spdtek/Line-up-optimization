@@ -30,7 +30,7 @@ the player is lined up to play in that position and 0 otherwise.
 <p dir="auto">
 Fig.1 - Players’ ratings (Mahrudinda et al., 2020).
 </p>
-The objective function to be maximized is the total sum of ratings of selected players, subject to the constraints in table 1, and the specific contrantis for both formations considered in table 2 and table 3 respectively.
+The objective function to be maximized is the total sum of ratings of selected players, subject to the constraints in table 1, and the specific constraints for both formations considered in table 2 and table 3 respectively.
 
 Maximize H<sub>Z</sub>=6.81x<sub>0</sub>+5.86x<sub>1</sub>+6.62x<sub>2</sub>+⋯+6.03x<sub>40</sub>+8.22x<sub>41</sub>+5.84x<sub>42</sub>
 
