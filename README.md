@@ -42,38 +42,21 @@ python lineup_optim.py
 
 The user will be prompted for the formation to be optimized: 1 (default) for a 4-3-3 formation or 2 for a 4-3-2-1 formation.
 After running the optimization, output will be printed to the command line that showing the optimized line-up for the choosen formation and total rating. 
-QPU results for 4-3-3 formation 	Results for 4-3-3 formation in (Mahrudinda et al., 2020)
 
-Binary variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
-------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
-x<sub>1</sub> | Alisson | GK | 6.81 | x<sub>1</sub> | Alisson | GK | 6.81 
-x<sub>6</sub> | Philips | DC | 7.24 | x<sub>4</sub> | Gomez | DC | 6.91 
-x<sub>7</sub> | Fabinho | DC | 7.11 | x<sub>6</sub> | Philips | DC | 7.24 
-x<sub>8</sub> | Robertson | DL | 6.85 | x<sub>8</sub> | Robertson | DL | 6.85 
-x<sub>11</sub> | Milner | DR | 8.15 | x<sub>11</sub> | Milner | DR | 8.15 
-x<sub>18</sub> | Williams | CM | 7.77 | x<sub>18</sub> | Williams | CM | 7.77 
-x<sub>21</sub> | Thiago | CM | 7.38 | x<sub>21</sub> | Thiago | CM | 7.38 
-x<sub>28</sub> | Jota | CM | 9.39 | x<sub>28</sub> | Jota | CM | 9.39 
-x<sub>34</sub> | Mane | FWL | 7.56 | x<sub>34</sub> | Mane | FWL | 7.56 
-x<sub>37</sub> | Salah | FWR | 7.42 | x<sub>37</sub> | Salah | FWR | 7.42 
-x<sub>39</sub> | Firminho | FW | 6.99 | x<sub>39</sub> | Firminho | FW | 6.99 
- |  |  | Max H<sub>Z</sub> | 82.67 |  |  |  	Max H<sub>Z</sub> | 82.47
-
-
-Binary variable  | Player Name  | Position  | Rating  | Binary variable  | Player Name  | Position  | Rating
-------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
-x<sub>1</sub> | Alisson | GK | 6.81 | x<sub>1</sub> | Alisson | GK | 6.81 
-x<sub>6</sub> | Philips | DC | 7.24 | x<sub>6</sub> | Gomez | DC | 6.91 
-x<sub>7</sub> | Fabinho | DC | 7.11 | x<sub>7</sub> | Philips | DC | 7.24 
-x<sub>8</sub> | Robertson | DL | 6.85 | x<sub>8</sub> | Robertson | DL | 6.85 
-x<sub>11</sub> | Milner | DR | 8.15 | x<sub>11</sub> | Milner | DR | 8.15 
-x<sub>14</sub> | Williams | DM | 7.66 | x<sub>14</sub> | Williams | DM | 7.66 
-x<sub>16</sub> | Henderson | DM | 6.80 | x<sub>16</sub> | Henderson | DM | 6.80 
-x<sub>29</sub> | Wijnaldum | AM | 7.16 | x<sub>29</sub> | Wijnaldum | AM | 7.16
-x<sub>31</sub> | Firminho | AM | 6.80 | x<sub>31</sub> | Firminho | AM | 6.80
-x<sub>32</sub> | Mane | AM | 7.24 | x<sub>32</sub> | Mane | AM | 7.24 
-x<sub>42</sub> | Jota | FW | 8.22 | x<sub>42</sub> | Jota | FW | 8.22
- |  |  | Max H<sub>Z</sub> | 80.04 |  |  |  	Max H<sub>Z</sub> | 80.04
+Binary variable  | Player Name  | Position  | Rating
+------------- | ------------- | ------------- | -------------
+x<sub>1</sub> | Alisson | GK | 6.81
+x<sub>6</sub> | Philips | DC | 7.24
+x<sub>7</sub> | Fabinho | DC | 7.11 
+x<sub>8</sub> | Robertson | DL | 6.85
+x<sub>11</sub> | Milner | DR | 8.15 
+x<sub>18</sub> | Williams | CM | 7.77 
+x<sub>21</sub> | Thiago | CM | 7.38 
+x<sub>28</sub> | Jota | CM | 9.39
+x<sub>34</sub> | Mane | FWL | 7.56
+x<sub>37</sub> | Salah | FWR | 7.42 
+x<sub>39</sub> | Firminho | FW | 6.99 
+ |  |  | Max H<sub>Z</sub> | 82.67
 
 In addition, the list of constraints will be visualized showing wether if they are fulfilled (true) o not (false).
 
