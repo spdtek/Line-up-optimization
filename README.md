@@ -119,7 +119,9 @@ H<sub>4321</sub> = -H<sub>Z</sub> + λ(C<sub>1</sub>+C<sub>2</sub>+C<sub>3</sub>
 ## References
 
 (DWAVE, 2021) D-wave problem-solving handbook. https://docs.dwavesys.com/docs/latest/doc_handbook.html. Accessed 18 Dec 2021.
-(Mahrudinda et al., 2020) Mahrudinda, Sudrajat Supian, S. Subiyanto and Chaerani, D.  Optimization of The Best Line-up in Football using Binary Integer Programming Model. International Journal of Global Operations Research, Vol. 1, No. 3, pp. 114-122, 2020.
+
+(Mahrudinda et al., 2020) Mahrudinda, Sudrajat Supian, S. Subiyanto and Chaerani, D.  Optimization of The Best Line-up in Football using
+Binary Integer Programming Model. International Journal of Global Operations Research, Vol. 1, No. 3, pp. 114-122, 2020.
 
 
 ## License
